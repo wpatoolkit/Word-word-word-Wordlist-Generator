@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
  int three_count = COUNT_OF(three_words);
  int four_count = COUNT_OF(four_words);
  int five_count = COUNT_OF(five_words);
- // seen (4,190,292,704)
+ // seen (8,485,260,000)
  for(int i=0;i<five_count;++i){for(int j=0;j<three_count;++j){for(int k=0;k<four_count;++k){ std::cout << five_words[i] << "-" << three_words[j] << "-" << four_words[k] << std::endl; }}}
  for(int i=0;i<five_count;++i){for(int j=0;j<four_count;++j){for(int k=0;k<three_count;++k){ std::cout << five_words[i] << "-" << four_words[j] << "-" << three_words[k] << std::endl; }}}
  for(int i=0;i<four_count;++i){for(int j=0;j<three_count;++j){for(int k=0;k<five_count;++k){ std::cout << four_words[i] << "-" << three_words[j] << "-" << five_words[k] << std::endl; }}}
