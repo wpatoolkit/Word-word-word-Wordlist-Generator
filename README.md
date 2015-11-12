@@ -52,6 +52,6 @@ pipes its output into <a href="https://code.google.com/p/pyrit/">pyrit</a>
 `-full`<br>
 Uses a more comprehensive set of combinations.
 
-By default 8,485,260,000 combinations are generated (approx ~160GB in wordlist form).
+By default 8,485,260,000 combinations are generated (126GB in wordlist form).
 
 If you use the `-full` switch 12,506,451,500 combinations are generated (approx ~200GB in wordlist form).
