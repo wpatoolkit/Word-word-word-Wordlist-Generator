@@ -53,7 +53,7 @@ pipes its output into <a href="https://code.google.com/p/pyrit/">pyrit</a>
 Uses a more comprehensive set of combinations.
 
 `-6lists`<br>
-Creates 6 helper wordlists (3-4_4-3.txt, 3-5_5-3.txt, 3-norm.txt, 4-5_5-4.txt, 4-norm.txt, 5-norm.txt) for use with hashcat combinator attack...
+Creates 6 helper wordlists for use with hashcat combinator attack...
 
 `oclHashcat64 -m 2500 -a 1 -j "$-" ee.hccap "3-4_4-3.txt" "5-norm.txt"`<br>
 `oclHashcat64 -m 2500 -a 1 -j "$-" ee.hccap "3-5_5-3.txt" "4-norm.txt"`<br>
