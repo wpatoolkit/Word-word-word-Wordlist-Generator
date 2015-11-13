@@ -6,17 +6,17 @@ This is a small program written in C++ that will output combinations of 3 to 5 l
 It includes a built-in dictionary of:
 
 `454 3-letter words`<br>
-`1,400 4-letter words`<br>
-`2,225 5-letter words`<br>
+`1400 4-letter words`<br>
+`2226 5-letter words`<br>
 
 By default it will combine words in these formats:
 
-`5-3-4`<br>
-`5-4-3`<br>
-`4-3-5`<br>
-`4-5-3`<br>
 `3-4-5`<br>
+`4-3-5`<br>
 `3-5-4`<br>
+`5-3-4`<br>
+`4-5-3`<br>
+`5-4-3`<br>
 
 Using the `-full` switch will cause it to output combinations in these additional formats:
 
@@ -52,6 +52,13 @@ pipes its output into <a href="https://code.google.com/p/pyrit/">pyrit</a>
 `-full`<br>
 Uses a more comprehensive set of combinations.
 
-By default 8,485,260,000 combinations are generated (126GB in wordlist form).
+`-6lists`<br>
+Creates 6 helper wordlists (3-4_4-3.txt, 3-5_5-3.txt, 3-norm.txt, 4-5_5-4.txt, 4-norm.txt, 5-norm.txt) for use with hashcat combinator attack...
 
-If you use the `-full` switch 12,506,451,500 combinations are generated (approx ~200GB in wordlist form).
+oclHashcat64 -m 2500 -a 1 -j "$-" ee.hccap "3-4_4-3.txt" "5-norm.txt"
+oclHashcat64 -m 2500 -a 1 -j "$-" ee.hccap "3-5_5-3.txt" "4-norm.txt"
+oclHashcat64 -m 2500 -a 1 -j "$-" ee.hccap "4-5_5-4.txt" "3-norm.txt"
+
+By default 8,485,260,000 combinations are generated (126 GB in wordlist form).
+
+If you use the `-full` switch 12,506,451,500 combinations are generated (181 GB in wordlist form).
